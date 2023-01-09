@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/caf93bca36.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            /* background-color: rgb(164, 40, 40)!important; */
+            height: 1800px;
+        }
+
+        .navsy {
+            background-color: rgb(71, 69, 69);
+        }
+
+        .iconnav {
+            width: 40px;
+            height: 40px;
+            transition: 0.3s;
+        }
+
+        .iconnav:hover {
+            width: 50px;
+            height: 50px;
+        }
+
+        .linknav:hover {
+            text-decoration: underline;
+        }
+
+        .textnav {
+            transition: 0.3s;
+        }
+
+        .textnav:hover {
+            transform: scale(1.2);
+        }
+
+        .jumbo {
+            height: 600px;
+            background-color: rgb(23, 23, 23);
+        }
+
+        .fontjumbotron {
+            color: white;
+        }
+
+        .cardsy {
+            width: 100%;
+            background-color: rgb(23, 23, 23);
+        }
+
+        .aboutsy {
+            background-color: rgb(23, 23, 23);
+            padding-top: 300px;
+            padding-bottom: 300px;
+        }
+
+        .fontabout {
+            color: white;
+        }
+
+        .boxabout {
+            width: 60%;
+        }
+
+        .footersy {
+            padding-top: 300px;
+            background-color: rgb(23, 23, 23);
+        }
+
+        .fontfooter {
+            color: white;
+        }
+
+        .judullink {
+            text-decoration: none;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navsy navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <div class="d-flex flex-row justify-content-sm-start ">
+                <div class="p-2"><a href="https://www.instagram.com/muhammadazhr29/?hl=id" class="navbar-brand"><img
+                            class="iconnav" src="png/instagram.png" alt="ig"></a></div>
+                <div class="p-2"><a href="https://github.com/HafizhMA" class="navbar-brand"><img class="iconnav"
+                            src="png/github.png" alt="facebook"></a></div>
+            </div>
+            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="textnav nav-link linknav text-white" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="textnav nav-link linknav text-white" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="textnav nav-link linknav text-white" href="#email">Email</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end -->
+
+    <!-- jumbotron -->
+    <div class="jumbo">
+        <div class="container d-flex jumbo align-items-center justify-content-center">
+            <div class="fs-1 fontjumbotron">
+                My name is Hafizh Muhammad Azhar, i studying web development
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- card -->
+    <div id="projects" class="cardsy pt-3">
+        <div class="container cardproject">
+            <div class="row g-4 align-items-center justify-content-center">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <a href="https://simple-landing-page-abstrak.netlify.app/"><img src="png/landingpage.png"
+                                class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="https://github.com/HafizhMA/Landing-page-abstract" class="judullink">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="card-title">Landing Page</h5>
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <p class="card-text">simple landing page using html and css</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <a href="https://simple-responsive-gallery.netlify.app/"><img src="png/galeri.png"
+                                class="card-img-top" alt="..."></a>
+                        <div class="card-body">
+                            <a href="https://github.com/HafizhMA/simple-responsive-galeri" class="judullink">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <h5 class="card-title">Simple Responsive Galler</h5>
+                                    <i class="fa-brands fa-github"></i>
+                                </div>
+                                <p class="card-text">simple responsive gallery using html and css.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card">
+                        <img src="png/portofolio.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Simple Portfolio</h5>
+                            <p class="card-text">simple portfolio using html and css.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+    <!-- about start -->
+    <div class="aboutsy pt-5 pb-3">
+        <div id="about" class="container d-flex aboutsy boxabout align-items-center justify-content-center text-center w-100">
+            <div class="fs-2 fontabout">
+                I am a student and in studying, I get learning about the importance of applying modern technology
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+    <!-- footer start -->
+    <div class="footersy pt-5 pb-3">
+        <div id="email" class="container d-flex footersy align-items-end justify-content-end">
+            <div class="fs-5 fontfooter">
+                Email: 2011501042@student.budiluhur.ac.id<br>
+                Email: muhammadazhr29@gmail.com
+            </div>
+        </div>
+    </div>
+    <!-- end -->
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
